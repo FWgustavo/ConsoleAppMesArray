@@ -10,12 +10,12 @@ namespace ConsoleAppMesArray
     {
         static void Main(string[] args)
         {
-            string[] mes = { "", "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" };
+            string[] mes = { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" };
 
             Console.WriteLine("Digite o número de um mês: ");
             int i = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("O mês escolhido foi: " + mes[i]);
+            Console.WriteLine("O mês escolhido foi: " + mes[i-1]);
             Console.ReadKey();
         }
     }
